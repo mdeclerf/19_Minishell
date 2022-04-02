@@ -11,8 +11,8 @@ Minishell :
 <li>Handle ’ (single quote) which should prevent the shell from interpreting the metacharacters in the quoted sequence.</li>
 <li>Handle " (double quote) which should prevent the shell from interpreting the metacharacters in the quoted sequence except for $ (dollar sign).</li>
 <li>Implement redirections:
-◦ < should redirect input.
-◦ > should redirect output.
+◦ < should redirect input.<br>
+◦ > should redirect output.<br>
 ◦ << should be given a delimiter, then read the input until a line containing the delimiter is seen. However, it doesn’t have to update the history!
 ◦ >> should redirect output in append mode. </li>
 <li>Implement pipes (| character). The output of each command in the pipeline is connected to the input of the next command via a pipe.</li>
@@ -20,15 +20,15 @@ Minishell :
 <li>Handle $? which should expand to the exit status of the most recently executed foreground pipeline.</li>
 <li>Handle ctrl-C, ctrl-D and ctrl-\ which should behave like in bash.</li>
 <li>In interactive mode:
-◦ ctrl-C displays a new prompt on a new line.
-◦ ctrl-D exits the shell.
+◦ ctrl-C displays a new prompt on a new line.<br>
+◦ ctrl-D exits the shell.<br>
 ◦ ctrl-\ does nothing.</li>
-<li>Your shell must implement the following builtins:
-◦ echo with option -n
-◦ cd with only a relative or absolute path
-◦ pwd with no options
-◦ export with no options
-◦ unset with no options
-◦ env with no options or arguments
+<li>Following builtins:
+◦ echo with option -n<br>
+◦ cd with only a relative or absolute path<br>
+◦ pwd with no options<br>
+◦ export with no options<br>
+◦ unset with no options<br>
+◦ env with no options or arguments<br>
 ◦ exit with no options</li>
 </ul>
